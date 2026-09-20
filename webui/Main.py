@@ -3165,8 +3165,8 @@ def _render_settings_dialog():
 
             upload_post_platforms = st.multiselect(
                 tr("Platforms"),
-                options=["tiktok", "instagram", "youtube"],
-                default=config.app.get("upload_post_platforms", ["tiktok", "instagram"]),
+                options=["tiktok", "instagram", "facebook", "youtube"],
+                default=config.app.get("upload_post_platforms", ["tiktok", "instagram", "facebook"]),
                 help="Select platforms to publish to",
                 key="upload_post_platforms_multiselect"
             )
